@@ -1,1 +1,20 @@
-{ "short_name": "Receita App", "name": "Minha Receita Psiquiátrica", "icons": [ { "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png", "type": "image/png", "sizes": "192x192" }, { "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png", "type": "image/png", "sizes": "512x512" } ], "start_url": ".", "display": "standalone", "theme_color": "#0D9488", "background_color": "#F1F5F9" }
+{
+  "short_name": "Receita App",
+  "name": "Minha Receita Psiquiátrica",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0D9488",
+  "background_color": "#F1F5F9"
+}
