@@ -1,1 +1,3 @@
-self.addEventListener('fetch', function(event) {});
+self.addEventListener('fetch', function(event) {
+  // Service Worker para instalação do PWA.
+});
