@@ -1,31 +1,20 @@
 {
-  "short_name": "Receita App",
+  "short_name": "App Médico",
   "name": "Minha Receita Psiquiátrica",
-  "description": "Aplicativo para solicitação de receitas e laudos médicos do Dr. Marcelo Medeiros.",
-  "id": "/",
-  "start_url": ".",
-  "scope": "/",
-  "display": "standalone",
-  "theme_color": "#0D9488",
-  "background_color": "#F1F5F9",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "https://i.ibb.co/6y4G6Gz/image-aeb18d.png",
+      "src": "/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#008080",
+  "background_color": "#ffffff"
 }
