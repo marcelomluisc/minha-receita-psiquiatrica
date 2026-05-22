@@ -31,6 +31,8 @@
             --danger: #EF4444;
             --gray-text: #4B5563;
             --gray-light: #F3F4F6;
+            --orange-plan: #f59e0b;
+            --teal-plan: #0d9488;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -229,6 +231,30 @@
             letter-spacing: 1px;
         }
         
+        /* Card destaque para o plano fidelização */
+        .service-card.fidelity-card {
+            border: 3px solid var(--orange-plan);
+            background: linear-gradient(135deg, #ffffff, #fffbeb);
+        }
+        
+        .service-card.fidelity-card .price-display {
+            background: linear-gradient(135deg, var(--orange-plan), #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .fidelity-badge-card {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, var(--orange-plan), #dc2626);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+        
         /* ===== DOWNLOAD APP SECTION ===== */
         .download-section {
             background: linear-gradient(135deg, #E8F4F8, #FFFFFF);
@@ -306,7 +332,7 @@
 </head>
 <body>
     <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/554491339060?text=Olá%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta" 
+    <a href="https://wa.me/554491339060?text=Ol%C3%A1%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta" 
        class="whatsapp-float" target="_blank">
        <i class="fab fa-whatsapp"></i>
     </a>
@@ -334,7 +360,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="https://wa.me/554491339060?text=Olá%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta%20de%20R$%2099,90" 
+                    <a href="https://wa.me/554491339060?text=Ol%C3%A1%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta%20de%20R$%2099,90" 
                        class="cta-primary" target="_blank">
                         <i class="fas fa-calendar-check me-2"></i> Agendar Agora
                     </a>
@@ -438,7 +464,7 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- SERVICES COM NOVOS VALORES -->
     <section class="py-5" id="servicos">
         <div class="container">
             <h2 class="text-center h2 fw-900 mb-2" style="color: var(--blue-dark);">
@@ -447,6 +473,7 @@
             <p class="text-center text-muted mb-5">Todos os serviços incluem receituário digital e acompanhamento profissional</p>
             
             <div class="row">
+                <!-- CARD 1: CONSULTA ONLINE (mantido) -->
                 <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon-wrap">
@@ -467,42 +494,47 @@
                     </div>
                 </div>
                 
+                <!-- CARD 2: CONSULTA PRIORITÁRIA (NOVO) -->
                 <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon-wrap">
-                            <i class="fas fa-file-contract"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <h3 class="h5 fw-800 mb-2">Laudo + Consulta</h3>
-                        <p class="price-label">Pacote completo</p>
-                        <div class="price-display">R$ 180,00</div>
+                        <h3 class="h5 fw-800 mb-2">Consulta Prioritária</h3>
+                        <p class="price-label">Atendimento rápido</p>
+                        <div class="price-display">R$ 199</div>
                         <p class="text-muted mb-3" style="font-size: 0.95rem;">
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Laudo sem RQE<br>
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Consulta incluída<br>
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Documento oficial
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> 30 minutos<br>
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Atendimento em 12h<br>
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Laudo incluso
                         </p>
-                        <a href="https://wa.me/554491339060?text=Quero%20agendar%20Laudo%20sem%20RQE%20+%20Consulta%20R$%20180" 
+                        <a href="https://wa.me/554491339060?text=Quero%20agendar%20Consulta%20Priorit%C3%A1ria%20R$%20199" 
                            target="_blank" class="cta-primary w-100" style="padding: 12px;">
                             <i class="fas fa-whatsapp me-2"></i> Agendar Agora
                         </a>
                     </div>
                 </div>
                 
+                <!-- CARD 3: PLANO FIDELIZAÇÃO (NOVO - DESTAQUE) -->
                 <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon-wrap">
-                            <i class="fas fa-file-signature"></i>
+                    <div class="service-card fidelity-card">
+                        <div class="fidelity-badge-card">
+                            <i class="fas fa-crown"></i> MAIS ECONÔMICO
                         </div>
-                        <h3 class="h5 fw-800 mb-2">Laudo com RQE</h3>
-                        <p class="price-label">Premium</p>
-                        <div class="price-display">R$ 250,00</div>
+                        <div class="service-icon-wrap">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="h5 fw-800 mb-2">Plano Fidelização</h3>
+                        <p class="price-label">Melhor custo-benefício</p>
+                        <div class="price-display">R$ 450<small style="font-size: 1rem;">/mês</small></div>
                         <p class="text-muted mb-3" style="font-size: 0.95rem;">
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Registro de Qualificação<br>
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Fins legais<br>
-                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Máxima validade
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> 2 consultas/mês<br>
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> WhatsApp direto<br>
+                            <i class="fas fa-check-circle me-2" style="color: var(--success);"></i> Prioridade total
                         </p>
-                        <a href="https://wa.me/554491339060?text=Quero%20agendar%20Laudo%20com%20RQE%20R$%20250" 
+                        <a href="https://wa.me/554491339060?text=Quero%20assinar%20o%20Plano%20Fideliza%C3%A7%C3%A3o%20R$%20450/m%C3%AAs" 
                            target="_blank" class="cta-primary w-100" style="padding: 12px;">
-                            <i class="fas fa-whatsapp me-2"></i> Agendar Agora
+                            <i class="fas fa-whatsapp me-2"></i> Assinar Agora
                         </a>
                     </div>
                 </div>
@@ -635,7 +667,7 @@
         <div class="container text-center">
             <h3 class="h3 fw-900 mb-3">Pronto Para Cuidar da Sua Saúde Mental?</h3>
             <p class="h5 mb-4">Primeira consulta por apenas <strong>R$ 99,90</strong></p>
-            <a href="https://wa.me/554491339060?text=Olá%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta" 
+            <a href="https://wa.me/554491339060?text=Ol%C3%A1%20Dr.%20Marcelo,%20quero%20agendar%20minha%20primeira%20consulta" 
                class="cta-primary" style="background: var(--green-whats);" target="_blank">
                 <i class="fab fa-whatsapp me-2"></i> Agendar Agora no WhatsApp
             </a>
